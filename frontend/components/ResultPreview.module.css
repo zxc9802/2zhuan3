@@ -1,0 +1,107 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+}
+
+.preview {
+  flex: 1;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--background-secondary);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  position: relative;
+}
+
+.loadingState,
+.errorState,
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.loadingState svg,
+.errorState svg,
+.emptyState svg {
+  color: var(--secondary-color);
+}
+
+.loadingState p,
+.errorState p,
+.emptyState p {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.loadingState span,
+.errorState span,
+.emptyState span {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.errorState {
+  color: var(--error-color);
+}
+
+.errorState svg {
+  color: var(--error-color);
+}
+
+.errorState button {
+  margin-top: 8px;
+}
+
+.imageResult {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.imageResult img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.metadata {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  backdrop-filter: blur(4px);
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+}
+
+.actions button {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.actions button svg {
+  width: 20px;
+  height: 20px;
+}

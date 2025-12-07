@@ -1,0 +1,166 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px 0;
+  box-shadow: var(--shadow-md);
+}
+
+.headerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoIcon {
+  font-size: 32px;
+}
+
+.subtitle {
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.main {
+  flex: 1;
+  padding: 32px 0;
+  background-color: var(--background-secondary);
+}
+
+.workspace {
+  display: grid;
+  grid-template-columns: 320px 1fr 280px;
+  gap: 24px;
+  min-height: 600px;
+}
+
+.leftPanel,
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.centerPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+  transition: border-color 0.2s;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.textarea:disabled {
+  background-color: var(--background-secondary);
+  cursor: not-allowed;
+}
+
+.generateBtn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+.footer {
+  background-color: var(--text-primary);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 响应式设计 */
+@media (max-width: 1200px) {
+  .workspace {
+    grid-template-columns: 280px 1fr 240px;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 992px) {
+  .workspace {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .leftPanel,
+  .rightPanel {
+    order: 0;
+  }
+
+  .centerPanel {
+    order: 1;
+  }
+
+  .rightPanel {
+    order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding: 20px 0;
+  }
+
+  .workspace {
+    gap: 20px;
+  }
+
+  .header {
+    padding: 20px 0;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .logoIcon {
+    font-size: 28px;
+  }
+}
