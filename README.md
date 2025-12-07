@@ -2,8 +2,14 @@
 
 > 一键将复杂的工程平面图纸，转化为直观易懂的3D可视化效果图
 
-[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/yourusername/blueprint3d)
+[![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)](https://github.com/zxc9802/2zhuan3)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
+
+## 🚀 在线演示
+
+- **前端应用**: [部署到 Vercel 后填写此处]
+- **API文档**: [后端部署后填写此处]
+- **GitHub**: [https://github.com/zxc9802/2zhuan3](https://github.com/zxc9802/2zhuan3)
 
 ## 项目简介
 
@@ -260,8 +266,9 @@ A:
 
 ## 联系方式
 
-- 项目主页: [https://github.com/yourusername/blueprint3d](https://github.com/yourusername/blueprint3d)
-- 问题反馈: [Issues](https://github.com/yourusername/blueprint3d/issues)
+- 项目主页: [https://github.com/zxc9802/2zhuan3](https://github.com/zxc9802/2zhuan3)
+- 问题反馈: [Issues](https://github.com/zxc9802/2zhuan3/issues)
+- 部署指南: [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 
